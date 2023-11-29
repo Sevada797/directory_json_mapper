@@ -33,7 +33,6 @@ $files=explode("\n", shell_exec("ls -l"));
 $dirs=[];
 
 for ($i=1; $i<(count($files)-1); $i++) {
-//IF FILE IS DIRECTORY PUSH FILENAME TO ARRAY DIR
 $tempObj=new stdClass();
 $tempObj->name=explode(" ", $files[$i])[ (count(explode(" ", $files[$i])) - 1)] ;
 
